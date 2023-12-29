@@ -78,7 +78,7 @@ def doWhatTomSevenSaid(prompt, exponentialDilution, dilutionProportion, iteratio
     """
 
     templateInput=[
-        {"role": "system", "content": "You are attempting to continue the assistant's message. Include a space at the beginning of all new words:"},
+        {"role": "system", "content": "You are attempting to continue a message. Include a space at the beginning of all new words, and directly respond to the prompt without qualifiers or explanations:"},
         {"role": "user", "content": f"{prompt}"},        
     ]
 
@@ -86,18 +86,18 @@ def doWhatTomSevenSaid(prompt, exponentialDilution, dilutionProportion, iteratio
 
     responsePhrase = ""
     originalModel = '4'
-    probabilityOfOG = 2**dilutionProportion if exponentialDilution else dilutionProportion 
+    probabilityOfOG = (1/2)**dilutionProportion if exponentialDilution else dilutionProportion 
 
     timesUsedModel = 0
 
     for i in range(1, iterations):
 
-        curHistory = templateInput[:]+([{"role": "assistant", "content": f"{responsePhrase}"}])
+        curHistory = templateInput[:]+([{"role": "user", "content": f"Continue directly from here: {responsePhrase}"}])
         
         usedModel = '3.5' if random.random() >= probabilityOfOG else '4.5'
-        print(usedModel)
+        # print(usedModel)
 
-        response = getOAIChatCompletion(usedModel,curHistory,1)
+        response = getOAIChatCompletion(usedModel,curHistory,2) + " "
         
         responsePhrase += response
 
@@ -108,4 +108,4 @@ def doWhatTomSevenSaid(prompt, exponentialDilution, dilutionProportion, iteratio
     return responsePhrase
 
 
-print(doWhatTomSevenSaid("Spell the alphabet, continuing if you make a mistake",False,1,20))
+print(doWhatTomSevenSaid("Write a python script to count 1 to 100",False,0.0,40))

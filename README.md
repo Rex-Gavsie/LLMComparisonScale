@@ -8,3 +8,8 @@ From there, we select a 'bad' standard. I'm unsure whether it would be better fo
 
 Finally, we use some objective tests to quantify the dilution needed to perform comparitatively to the LLM being tested. This is very vague, but I haven't fully figured out the details so that seems reasonable atm.
 
+## Notable Issues / Points of Friction
+
+- I'm kinda struggling to find things to act as the objective tests
+
+- This idea was kinda based on being able to use the actual next token prediction with later GPTs. Chat completions make things weird. Gotta look into that.
