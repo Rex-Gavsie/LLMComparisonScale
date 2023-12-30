@@ -13,3 +13,10 @@ Finally, we use some objective tests to quantify the dilution needed to perform 
 - I'm kinda struggling to find things to act as the objective tests
 
 - This idea was kinda based on being able to use the actual next token prediction with later GPTs. Chat completions make things weird. Gotta look into that.
+  - I switched to using the completions endpoint and it works now, but still gotta find a way to use this for GPT-4+
+
+## Current Progress
+
+- I've started making calibration graphs to establish a baseline.
+  - I am a bit concerned that the success rate is being affected more simply by luck of the draw on when davinci gets to input its token, but I guess it should be fine, this really isn't a very good test
+    - hopefully increased resolution will fix that.
