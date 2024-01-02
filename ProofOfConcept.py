@@ -135,7 +135,7 @@ def doWhatTomSevenSaidChatCompletions(prompt, exponentialDilution, dilutionPropo
 
     return responsePhrase
 
-def doWhatTomSevenSaidNormalCompletions(prompt, exponentialDilution, dilutionProportion, iterations, maxTokens):
+def doWhatTomSevenSaidNormalCompletions(prompt, exponentialDilution, dilutionProportion, iterations, maxTokens) -> str:
     """
     The actual loop
 
