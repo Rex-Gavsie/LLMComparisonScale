@@ -6,8 +6,8 @@ import itertools
 import numpy as np
 import tqdm
 
-from human_eval.data import HUMAN_EVAL, read_problems, stream_jsonl, write_jsonl
-from human_eval.execution import check_correctness
+from data import HUMAN_EVAL, read_problems, stream_jsonl, write_jsonl
+from execution import check_correctness
 
 
 def estimate_pass_at_k(
