@@ -270,4 +270,21 @@ def calculateSuccessRate(instruction, numTests, exponetialDilution, dilutionProp
     
     return(countOfSucesses/numTests)
 
+def getStandardName(taskPrefix=None, exponentialDilution=None, dilutionProportion=None, iterations=None, maxTokens=None, humanEvalSamplesPerTask=None) -> str:
+    """Just a standardized way of generating names so I don't have to"""
+
+    compositeString = taskPrefix 
+    if None != exponentialDilution:
+        compositeString += ("_exp_" if exponentialDilution else "_noExp_")
+    if None != dilutionProportion:
+        compositeString += str(dilutionProportion) + "dPro_" 
+    if None != iterations:
+        compositeString += str(iterations) + "Its_" 
+    if None != maxTokens:
+        compositeString += str(maxTokens) + "Tkns_"
+    if None != humanEvalSamplesPerTask:
+        compositeString += str(humanEvalSamplesPerTask) + "SPT_"
+
+    return compositeString.strip("_")
+
 # print(calculateSuccessRate("Write a python script to print 1 to 100", 5, False, 1, 15, 1))
