@@ -21,8 +21,14 @@ def entry_point(
     print(results)
 
 
-def main():
-    fire.Fire(entry_point)
+if __name__ == '__main__':
+    # fire.Fire(entry_point)
+    
+    results = evaluate_functional_correctness("C:\\Users\\Rex\\Documents\\VS Code General Projects\\LLMComparisonScale\\samples.jsonl")
+    print(results)
 
 
-sys.exit(main())
+# sys.exit(main())
+
+# results = evaluate_functional_correctness("C:\\Users\\Rex\\Documents\\VS Code General Projects\\LLMComparisonScale\\samples.jsonl")
+# print(results)

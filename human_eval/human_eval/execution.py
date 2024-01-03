@@ -4,7 +4,7 @@ import contextlib
 import faulthandler
 import io
 import os
-import multiprocessing
+import multiprocess
 import platform
 import signal
 import tempfile
@@ -67,10 +67,10 @@ def check_correctness(problem: Dict, completion: str, timeout: float,
             os.rmdir = rmdir
             os.chdir = chdir
 
-    manager = multiprocessing.Manager()
+    manager = multiprocess.Manager()
     result = manager.list()
 
-    p = multiprocessing.Process(target=unsafe_execute)
+    p = multiprocess.Process(target=unsafe_execute)
     p.start()
     p.join(timeout=timeout + 1)
     if p.is_alive():
@@ -86,18 +86,19 @@ def check_correctness(problem: Dict, completion: str, timeout: float,
         completion_id=completion_id,
     )
 
+import threading
+
+class TimeoutException(Exception):
+    pass
 
 @contextlib.contextmanager
 def time_limit(seconds: float):
-    def signal_handler(signum, frame):
-        raise TimeoutException("Timed out!")
-    signal.setitimer(signal.ITIMER_REAL, seconds)
-    signal.signal(signal.SIGALRM, signal_handler)
+    timer = threading.Timer(seconds, lambda: (_ for _ in ()).throw(TimeoutException("Timed out!")))
+    timer.start()
     try:
         yield
     finally:
-        signal.setitimer(signal.ITIMER_REAL, 0)
-
+        timer.cancel()
 
 @contextlib.contextmanager
 def swallow_io():
@@ -113,11 +114,6 @@ def create_tempdir():
     with tempfile.TemporaryDirectory() as dirname:
         with chdir(dirname):
             yield dirname
-
-
-class TimeoutException(Exception):
-    pass
-
 
 class WriteOnlyStringIO(io.StringIO):
     """ StringIO that throws an exception when it's read from """
