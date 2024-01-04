@@ -279,7 +279,7 @@ def getStandardName(taskPrefix=None, exponentialDilution=None, dilutionProportio
     if None != dilutionProportion:
         compositeString += str(dilutionProportion) + "dPro_" 
     if None != iterations:
-        compositeString += str(iterations) + "Its_" 
+        compositeString += str(iterations) + "CPT_" 
     if None != maxTokens:
         compositeString += str(maxTokens) + "Tkns_"
     if None != humanEvalSamplesPerTask:

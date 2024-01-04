@@ -24,7 +24,7 @@ def entry_point(
 if __name__ == '__main__':
     # fire.Fire(entry_point)
     
-    results = evaluate_functional_correctness("C:\\Users\\Rex\\Documents\\VS Code General Projects\\LLMComparisonScale\\hEvalTest35_noExp_1dPro_10Its_50Tkns_2SPT_Samples.jsonl")
+    results = evaluate_functional_correctness("C:\\Users\\Rex\\Documents\\VS Code General Projects\\LLMComparisonScale\\hEvalTest35_noExp_1dPro_500CPT_1Tkns_1SPT_Samples.jsonl")
     print(results)
 
 

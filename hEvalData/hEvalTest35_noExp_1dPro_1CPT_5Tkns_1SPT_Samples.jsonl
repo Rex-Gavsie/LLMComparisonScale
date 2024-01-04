@@ -1,0 +1,164 @@
+{"task_id": "HumanEval/1", "completion": "    # Your code here"}
+{"task_id": "HumanEval/2", "completion": "    return number - int"}
+{"task_id": "HumanEval/0", "completion": "    for i in range"}
+{"task_id": "HumanEval/4", "completion": "    # Calculate the mean"}
+{"task_id": "HumanEval/3", "completion": "    balance = 0"}
+{"task_id": "HumanEval/7", "completion": "    return [string for"}
+{"task_id": "HumanEval/10", "completion": "    if is_palindrome"}
+{"task_id": "HumanEval/8", "completion": "    if len(numbers)"}
+{"task_id": "HumanEval/9", "completion": "    # Initialize a list"}
+{"task_id": "HumanEval/5", "completion": "    result = []\n   "}
+{"task_id": "HumanEval/12", "completion": "    if len(strings)"}
+{"task_id": "HumanEval/15", "completion": "    return ' '.join"}
+{"task_id": "HumanEval/6", "completion": "    # TODO: Write"}
+{"task_id": "HumanEval/11", "completion": "def string_xor(a:"}
+{"task_id": "HumanEval/14", "completion": "    return [string[:"}
+{"task_id": "HumanEval/13", "completion": "    if a == "}
+{"task_id": "HumanEval/17", "completion": "    music_list = []\n"}
+{"task_id": "HumanEval/16", "completion": "    # Your code here"}
+{"task_id": "HumanEval/18", "completion": "    count = 0"}
+{"task_id": "HumanEval/21", "completion": "    min_number = min"}
+{"task_id": "HumanEval/19", "completion": "    # Convert string to"}
+{"task_id": "HumanEval/20", "completion": "    numbers.sort()\n   "}
+{"task_id": "HumanEval/24", "completion": "    for i in range"}
+{"task_id": "HumanEval/26", "completion": "    return [x for"}
+{"task_id": "HumanEval/22", "completion": "    return [x for"}
+{"task_id": "HumanEval/27", "completion": "    return ''.join(["}
+{"task_id": "HumanEval/23", "completion": "    return len(string)"}
+{"task_id": "HumanEval/25", "completion": "    factors = []\n   "}
+{"task_id": "HumanEval/28", "completion": "    return ''.join(strings"}
+{"task_id": "HumanEval/29", "completion": "    return [string for"}
+{"task_id": "HumanEval/35", "completion": "    return max(l)"}
+{"task_id": "HumanEval/34", "completion": "    return sorted(set(l"}
+{"task_id": "HumanEval/30", "completion": "    return [x for"}
+{"task_id": "HumanEval/33", "completion": "    # Your code here"}
+{"task_id": "HumanEval/32", "completion": "    if len(xs)"}
+{"task_id": "HumanEval/31", "completion": "    if n == "}
+{"task_id": "HumanEval/39", "completion": "    def is_prime(n"}
+{"task_id": "HumanEval/40", "completion": "    # Your code here"}
+{"task_id": "HumanEval/36", "completion": "    count = 0"}
+{"task_id": "HumanEval/38", "completion": "    # split string to"}
+{"task_id": "HumanEval/37", "completion": "    # Your code here"}
+{"task_id": "HumanEval/41", "completion": "    # Initialize the number"}
+{"task_id": "HumanEval/44", "completion": "    if x == "}
+{"task_id": "HumanEval/42", "completion": "    return [i +"}
+{"task_id": "HumanEval/46", "completion": "    if n == "}
+{"task_id": "HumanEval/43", "completion": "    # Your code here"}
+{"task_id": "HumanEval/47", "completion": "    l.sort()\n   "}
+{"task_id": "HumanEval/45", "completion": "    return 0."}
+{"task_id": "HumanEval/50", "completion": "    return \"\".join(["}
+{"task_id": "HumanEval/49", "completion": "    if n == "}
+{"task_id": "HumanEval/48", "completion": "    if text == '':\n"}
+{"task_id": "HumanEval/51", "completion": "    vowels = ['a"}
+{"task_id": "HumanEval/52", "completion": "    return all(x <"}
+{"task_id": "HumanEval/53", "completion": "    return x + y"}
+{"task_id": "HumanEval/54", "completion": "    # Your code here"}
+{"task_id": "HumanEval/56", "completion": "    stack = []\n   "}
+{"task_id": "HumanEval/55", "completion": "    if n == "}
+{"task_id": "HumanEval/57", "completion": "    if len(l)"}
+{"task_id": "HumanEval/58", "completion": "    return sorted(list(set"}
+{"task_id": "HumanEval/60", "completion": "    return (n *"}
+{"task_id": "HumanEval/61", "completion": "    stack = []\n   "}
+{"task_id": "HumanEval/59", "completion": "    # Your code here"}
+{"task_id": "HumanEval/62", "completion": "    return [xs[i"}
+{"task_id": "HumanEval/63", "completion": "    if n == "}
+{"task_id": "HumanEval/64", "completion": "    vowels = ['a"}
+{"task_id": "HumanEval/65", "completion": "    # Your code here"}
+{"task_id": "HumanEval/67", "completion": "    # your code here"}
+{"task_id": "HumanEval/66", "completion": "    # Initialize sum variable"}
+{"task_id": "HumanEval/69", "completion": "    # Your code here"}
+{"task_id": "HumanEval/68", "completion": "    # Your code here"}
+{"task_id": "HumanEval/70", "completion": "    if not lst:\n"}
+{"task_id": "HumanEval/72", "completion": "    if sum(q)"}
+{"task_id": "HumanEval/71", "completion": "    if a + b"}
+{"task_id": "HumanEval/74", "completion": "    if len(lst1"}
+{"task_id": "HumanEval/75", "completion": "    def is_prime(n"}
+{"task_id": "HumanEval/73", "completion": "    def is_palindrome"}
+{"task_id": "HumanEval/76", "completion": "    if x == "}
+{"task_id": "HumanEval/77", "completion": "    if a == "}
+{"task_id": "HumanEval/79", "completion": "    binary = bin(decimal"}
+{"task_id": "HumanEval/78", "completion": "    # Convert hexadecimal number"}
+{"task_id": "HumanEval/80", "completion": "    if len(s)"}
+{"task_id": "HumanEval/82", "completion": "    def is_prime(n"}
+{"task_id": "HumanEval/81", "completion": "    letter_grades ="}
+{"task_id": "HumanEval/83", "completion": "    count = 0"}
+{"task_id": "HumanEval/85", "completion": "    sum = 0"}
+{"task_id": "HumanEval/87", "completion": "    result = []\n   "}
+{"task_id": "HumanEval/84", "completion": "    # Convert N to"}
+{"task_id": "HumanEval/86", "completion": "    # Your code here"}
+{"task_id": "HumanEval/89", "completion": "    # Your code here"}
+{"task_id": "HumanEval/88", "completion": "    if len(array)"}
+{"task_id": "HumanEval/90", "completion": "    if len(lst)"}
+{"task_id": "HumanEval/93", "completion": "    # Your code here"}
+{"task_id": "HumanEval/91", "completion": "    count = 0"}
+{"task_id": "HumanEval/95", "completion": "    if len(dict)"}
+{"task_id": "HumanEval/94", "completion": "    def is_prime(n"}
+{"task_id": "HumanEval/92", "completion": "    if type(x)"}
+{"task_id": "HumanEval/96", "completion": "    if n < "}
+{"task_id": "HumanEval/97", "completion": "    return (a %"}
+{"task_id": "HumanEval/98", "completion": "    count = 0"}
+{"task_id": "HumanEval/99", "completion": "    # Convert value to"}
+{"task_id": "HumanEval/101", "completion": "    return s.replace(',',"}
+{"task_id": "HumanEval/100", "completion": "    # Your code here"}
+{"task_id": "HumanEval/102", "completion": "    if x > y"}
+{"task_id": "HumanEval/103", "completion": "    if n > m"}
+{"task_id": "HumanEval/104", "completion": "    result = []\n   "}
+{"task_id": "HumanEval/105", "completion": "    # Your code here"}
+{"task_id": "HumanEval/108", "completion": "    def sum_digits(n"}
+{"task_id": "HumanEval/106", "completion": "    result = []\n   "}
+{"task_id": "HumanEval/107", "completion": "    # Your code here"}
+{"task_id": "HumanEval/109", "completion": "    if len(arr)"}
+{"task_id": "HumanEval/111", "completion": "    # Your code here"}
+{"task_id": "HumanEval/114", "completion": "    # Initialize minimum sum"}
+{"task_id": "HumanEval/110", "completion": "    # Your code here"}
+{"task_id": "HumanEval/113", "completion": "    return [\"the number"}
+{"task_id": "HumanEval/112", "completion": "    # Your code here"}
+{"task_id": "HumanEval/115", "completion": "    def get_max_fill"}
+{"task_id": "HumanEval/116", "completion": "    # Your code here"}
+{"task_id": "HumanEval/117", "completion": "    # Your code here"}
+{"task_id": "HumanEval/118", "completion": "    vowels = ['a"}
+{"task_id": "HumanEval/120", "completion": "    # Sort the array"}
+{"task_id": "HumanEval/119", "completion": "    # Your code here"}
+{"task_id": "HumanEval/121", "completion": "    return sum(lst[i"}
+{"task_id": "HumanEval/122", "completion": "    # Your code here"}
+{"task_id": "HumanEval/127", "completion": "    # Your code here"}
+{"task_id": "HumanEval/123", "completion": "    # Your code here"}
+{"task_id": "HumanEval/125", "completion": "    if ' ' in"}
+{"task_id": "HumanEval/124", "completion": "    if date == '':\n"}
+{"task_id": "HumanEval/126", "completion": "    # Your code here"}
+{"task_id": "HumanEval/128", "completion": "    if len(arr)"}
+{"task_id": "HumanEval/131", "completion": "    product = 1"}
+{"task_id": "HumanEval/134", "completion": "    if txt == \"\":\n"}
+{"task_id": "HumanEval/129", "completion": "    def dfs(grid,"}
+{"task_id": "HumanEval/132", "completion": "    # Your code here"}
+{"task_id": "HumanEval/133", "completion": "    return sum([int"}
+{"task_id": "HumanEval/130", "completion": "    if n == "}
+{"task_id": "HumanEval/135", "completion": "    # Your code here"}
+{"task_id": "HumanEval/137", "completion": "    if type(a)"}
+{"task_id": "HumanEval/136", "completion": "    if len(lst)"}
+{"task_id": "HumanEval/140", "completion": "    text = text.replace"}
+{"task_id": "HumanEval/138", "completion": "    # Your code here"}
+{"task_id": "HumanEval/139", "completion": "    if n == "}
+{"task_id": "HumanEval/141", "completion": "    # Check if the"}
+{"task_id": "HumanEval/144", "completion": "    # Convert the fractions"}
+{"task_id": "HumanEval/145", "completion": "    def sum_of_digits"}
+{"task_id": "HumanEval/142", "completion": "    sum = 0"}
+{"task_id": "HumanEval/143", "completion": "    # Your code here"}
+{"task_id": "HumanEval/146", "completion": "    count = 0"}
+{"task_id": "HumanEval/147", "completion": "    # Write your code"}
+{"task_id": "HumanEval/149", "completion": "    # Your code here"}
+{"task_id": "HumanEval/148", "completion": "    planets = [\"Mer"}
+{"task_id": "HumanEval/151", "completion": "    return sum([x"}
+{"task_id": "HumanEval/150", "completion": "    if n == "}
+{"task_id": "HumanEval/153", "completion": "    # Your code here"}
+{"task_id": "HumanEval/152", "completion": "    result = []\n   "}
+{"task_id": "HumanEval/155", "completion": "    even_count = "}
+{"task_id": "HumanEval/156", "completion": "    # Your code here"}
+{"task_id": "HumanEval/154", "completion": "    # Your code here"}
+{"task_id": "HumanEval/157", "completion": "    if a**2"}
+{"task_id": "HumanEval/158", "completion": "    max_word = \"\"\n"}
+{"task_id": "HumanEval/159", "completion": "    if remaining < need"}
+{"task_id": "HumanEval/160", "completion": "    # Your code here"}
+{"task_id": "HumanEval/161", "completion": "    # Your code here"}
+{"task_id": "HumanEval/162", "completion": "    if text == '':\n"}
+{"task_id": "HumanEval/163", "completion": "    # Your code here"}

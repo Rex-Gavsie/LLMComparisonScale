@@ -16,7 +16,21 @@ Finally, we use some objective tests to quantify the dilution needed to perform 
   - I switched to using the completions endpoint and it works now, but still gotta find a way to use this for GPT-4+
 
 ## Current Progress
-
+<!-- 
 - I've started making calibration graphs to establish a baseline.
   - I am a bit concerned that the success rate is being affected more simply by luck of the draw on when davinci gets to input its token, but I guess it should be fine, this really isn't a very good test
-    - hopefully increased resolution will fix that.
+    - hopefully increased resolution will fix that. -->
+
+### Human Eval Score Testing
+  - 10 Samples per test seems to yield roughly equal results to 1 sample per test at 500 tokens which makes sense
+  - 10 SPT 1CPT 500 Tokens 3.5 Only: 
+    - pass@1: 65.7% 
+    - pass@10: 66.5%
+  - 1 SPT 1CPT 500 Tokens 3.5 Only:
+    - pass@1: 64.6%
+  - 1 SPT 10 CPT 50 Tokens
+    - pass@1: 65.9%
+  - 1 SPT 100 CPT 5 Tokens
+    - pass@1: 65.2%
+  - 1 SPT 500 CPT 1 Token (took like half an hour, maybe more)
+    - pass@1: 64.6%
