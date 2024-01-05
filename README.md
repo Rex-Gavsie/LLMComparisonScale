@@ -36,16 +36,23 @@ Finally, we use some objective tests to quantify the dilution needed to perform 
     - pass@1: 64.6% (test 5)
     - pass@1: 65.9% (test 6)
 
-    It's consistently one or the other, and it's the exact number every time. 
+    **It's consistently one or the other, and it's the exact number every time.** 
   - 2 SPT 1CPT 500 Tokens 3.5 Only:
     - pass@1: 65.85% (test 1)
     - pass@1: 65.85% (test 2)
 
-    Weird
+    **Weird**
   - 1 SPT 10 CPT 50 Tokens
     - pass@1: 65.9%
   - 1 SPT 100 CPT 5 Tokens (maybe the way to go given time vs result. Seems like success rate goes down with increased calls)
-    - pass@1: 65.2%
+    - pass@1: 65.2% (test 1)
+    - pass@1: 66.5% (test 2)
+    - pass@1: 65.9% (test 3) (this is the average of the previous two and equal to the max of the 1CPT 500 Tokens 3.5 Only)
+    - pass@1: 65.2% (test 4)
+    - pass@1: 65.2% (test 5)
+    - pass@1: 64.0% (test 6)
+
+    (weird)
   - 1 SPT 500 CPT 1 Token (took like half an hour, maybe more)
     - pass@1: 64.6%
 
@@ -55,4 +62,9 @@ Finally, we use some objective tests to quantify the dilution needed to perform 
   - Y-Axis: Successrate
 
 #### Parameters:
-1 Sample Per Test (maybe 3 to get less variance)
+  - 2 Samples Per Test
+  - 100 Calls Per Test
+  - 5 Tokens Per Call
+
+
+  

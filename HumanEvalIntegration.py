@@ -84,15 +84,15 @@ def main(numSamplesPerTask, exponentialDilution, dilutionProportion, callsPerTes
 
         samples = [future.result() for future in concurrent.futures.as_completed(futures)]
 
-    write_jsonl(f"hEvalData\{getStandardName('hEvalTest35', exponentialDilution, dilutionProportion, callsPerTest, maxTokens, numSamplesPerTask)}(1)_Samples.jsonl", samples)
+    write_jsonl(f"hEvalData\{getStandardName('hEvalTest35', exponentialDilution, dilutionProportion, callsPerTest, maxTokens, numSamplesPerTask)}_Samples_Calibration.jsonl", samples)
 
 if __name__ == "__main__":
     
     numSamplesPerTask = 2
     exponentialDilution = False
     dilutionProportion = 1
-    callsPerTest = 1
-    maxTokens = 500
+    callsPerTest = 100
+    maxTokens = 5
 
     main(numSamplesPerTask,exponentialDilution,dilutionProportion,callsPerTest,maxTokens)
     # results = evaluate_functional_correctness(f"C:\\Users\\Rex\\Documents\\VS Code General Projects\\LLMComparisonScale\\{getStandardName('hEvalTest35', exponentialDilution, dilutionProportion, callsPerTest, maxTokens, numSamplesPerTask)}_Samples.jsonl")

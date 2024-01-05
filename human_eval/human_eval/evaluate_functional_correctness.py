@@ -23,7 +23,7 @@ def entry_point(
 def main():
     # fire.Fire(entry_point)
     
-    results = evaluate_functional_correctness("C:\\Users\\Rex\\Documents\\VS Code General Projects\\LLMComparisonScale\\hEvalData\\hEvalTest35_noExp_1dPro_1CPT_500Tkns_2SPT(1)_Samples.jsonl")
+    results = evaluate_functional_correctness("C:\\Users\\Rex\\Documents\\VS Code General Projects\\LLMComparisonScale\\hEvalData\\hEvalTest35_noExp_1dPro_100CPT_5Tkns_2SPT_Samples_Calibration.jsonl")
     print(results)
 
 
