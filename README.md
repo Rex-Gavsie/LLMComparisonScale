@@ -16,10 +16,12 @@ Finally, we use some objective tests to quantify the dilution needed to perform 
   - I switched to using the completions endpoint and it works now, but still gotta find a way to use this for GPT-4+
 
 ## Current Progress
-<!-- 
+
 - I've started making calibration graphs to establish a baseline.
   - I am a bit concerned that the success rate is being affected more simply by luck of the draw on when davinci gets to input its token, but I guess it should be fine, this really isn't a very good test
-    - hopefully increased resolution will fix that. -->
+    - hopefully increased resolution will fix that.
+- I need to figure out a way to make sure files aren't overwritten. Atm they will be so I'm just manually doing that.
+- I need to figure out why trying to use the evaluate_functional_correctness function from evaluate doesn't work and says it can't find the data module.
 
 ### Human Eval Score Testing
   - 10 Samples per test seems to yield roughly equal results to 1 sample per test at 500 tokens which makes sense
@@ -27,10 +29,30 @@ Finally, we use some objective tests to quantify the dilution needed to perform 
     - pass@1: 65.7% 
     - pass@10: 66.5%
   - 1 SPT 1CPT 500 Tokens 3.5 Only:
-    - pass@1: 64.6%
+    - pass@1: 64.6% (test 1)
+    - pass@1: 65.9% (test 2)
+    - pass@1: 64.6% (test 3)
+    - pass@1: 65.9% (test 4)
+    - pass@1: 64.6% (test 5)
+    - pass@1: 65.9% (test 6)
+
+    It's consistently one or the other, and it's the exact number every time. 
+  - 2 SPT 1CPT 500 Tokens 3.5 Only:
+    - pass@1: 65.85% (test 1)
+    - pass@1: 65.85% (test 2)
+
+    Weird
   - 1 SPT 10 CPT 50 Tokens
     - pass@1: 65.9%
-  - 1 SPT 100 CPT 5 Tokens
+  - 1 SPT 100 CPT 5 Tokens (maybe the way to go given time vs result. Seems like success rate goes down with increased calls)
     - pass@1: 65.2%
   - 1 SPT 500 CPT 1 Token (took like half an hour, maybe more)
     - pass@1: 64.6%
+
+
+### Dilution Calibration
+  - X-Axis: Dilution
+  - Y-Axis: Successrate
+
+#### Parameters:
+1 Sample Per Test (maybe 3 to get less variance)

@@ -20,12 +20,15 @@ def entry_point(
     results = evaluate_functional_correctness(sample_file, k, n_workers, timeout, problem_file)
     print(results)
 
-
-if __name__ == '__main__':
+def main():
     # fire.Fire(entry_point)
     
-    results = evaluate_functional_correctness("C:\\Users\\Rex\\Documents\\VS Code General Projects\\LLMComparisonScale\\hEvalTest35_noExp_1dPro_500CPT_1Tkns_1SPT_Samples.jsonl")
+    results = evaluate_functional_correctness("C:\\Users\\Rex\\Documents\\VS Code General Projects\\LLMComparisonScale\\hEvalData\\hEvalTest35_noExp_1dPro_1CPT_500Tkns_2SPT(1)_Samples.jsonl")
     print(results)
+
+
+if __name__ == '__main__':
+    main()
 
 
 # sys.exit(main())
